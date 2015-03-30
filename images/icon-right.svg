@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 23.9 44" enable-background="new 0 0 23.9 44" xml:space="preserve">
+<g>
+	<rect x="-21.8" y="-8.6" display="none" fill="#FFFFFF" width="58" height="58"/>
+	<g>
+		
+			<line fill="none" stroke="#666666" stroke-width="1.001" stroke-miterlimit="10" stroke-dasharray="1,1" x1="1.8" y1="0.7" x2="23.3" y2="22.1"/>
+		
+			<line fill="none" stroke="#666666" stroke-width="1.001" stroke-miterlimit="10" stroke-dasharray="1,1" x1="23.3" y1="21.6" x2="1.8" y2="43.1"/>
+	</g>
+</g>
+</svg>

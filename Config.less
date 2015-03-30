@@ -1,0 +1,75 @@
+﻿
+@font-size-base:          1.4rem;
+@font-size-large:         @font-size-base * 1.25; 
+@font-size-small:         @font-size-base * 0.85; 
+
+@font-size-h1:            @font-size-base * 2.6; 
+@font-size-h2:            @font-size-base * 2.15; 
+@font-size-h3:            @font-size-base * 1.7; 
+@font-size-h4:            @font-size-base * 1.25; 
+@font-size-h5:            @font-size-base;
+@font-size-h6:            @font-size-base * 0.85;
+
+@headings-font-family:    HelveticaNeueCyr, Arial, sans-serif;
+@headings-font-weight:    400;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+@line-height-base:        1.428571429;
+@line-height-computed:    round(@font-size-base * @line-height-base, 1);
+@line-height-smaller:     1;
+@line-height-bigger:      1.5;
+@line-height-large:       1.7;
+
+@gray_color:              #6E7172;
+@yellow_color:            #DDDD14;
+@gray_l_color:            lighten(@gray_color, 50%);
+@yellow_l_color:          lighten(@yellow_color, 30%);
+
+@base-font-family:        Arial, sans-serif;
+
+@padding-base-vertical:   0.6rem; 
+@padding-base-horizontal: 1.6rem;
+
+@padding-small-vertical:  0.2rem;
+@padding-small-horizontal:0.4rem;
+
+@screen-xs:               768px;
+@screen-xs-min:           @screen-xs;
+@screen-phone:            @screen-xs-min;
+
+@screen-sm:               768px;
+@screen-sm-min:           @screen-sm;
+@screen-tablet:           @screen-sm-min;
+
+@screen-md:               992px;
+@screen-md-min:           @screen-md;
+@screen-desktop:          @screen-md-min;
+
+@screen-lg:               1200px;
+@screen-lg-min:           @screen-lg;
+@screen-lg-desktop:       @screen-lg-min;
+
+@screen-xs-max:           (@screen-sm-min - 1);
+@screen-sm-max:           (@screen-md-min - 1);
+@screen-md-max:           (@screen-lg-min - 1);
+
+
+@grid-columns:            12;
+@grid-gutter-width:       30px;
+@grid-float-breakpoint:   @screen-sm-min;
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+@container-tablet:        (720px + @grid-gutter-width);
+@container-sm:            @container-tablet;
+@container-desktop:       (940px + @grid-gutter-width);
+@container-md:            @container-desktop;
+
+@container-large-desktop: (1140px + @grid-gutter-width);
+@container-lg:            @container-large-desktop;
+
+@zindex-modal:            100;
+@modal-backdrop-opacity:  0.5;
+@import "Bundle.less";
