@@ -96,7 +96,7 @@ a.catalog-bar {
     left: 0;
     height: 12px;
     width: 12px;
-    background-image: url('../images/sprite-arrows.png');
+    background-image: url('/images/sprite-arrows.png');
     background-position: 0 0;
 
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ a.catalog-bar {
     left: -4px;
     height: 12px;
     width: 12px;
-    background-image: url('../images/sprite-arrows.png');
+    background-image: url('/images/sprite-arrows.png');
     background-position: -12px 0;
     background-repeat: no-repeat;
 }
@@ -200,7 +200,7 @@ a.catalog-bar {
 }
 .panel-heading a .filter-arrow,
 #seo-title .filter-arrow{
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-position: -27px 6px;
     background-repeat: no-repeat;
 }
@@ -254,14 +254,14 @@ p{margin-bottom: 0}
 }
 .icon-getlink{
     width: 30px; height: 30px;
-    background-image: url('../images/sprite-other-30x.png');
+    background-image: url('/images/sprite-other-30x.png');
     background-repeat: no-repeat;
     background-position: -173px 4px;
 }
 .icon-whitecross{
     width: 15px;
     height: 15px;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     background-position: -264px -2px;
 }
@@ -270,7 +270,7 @@ p{margin-bottom: 0}
     margin: 0 auto;
     width: 20px;
     height: 20px;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     background-position: -143px 3px
 }
@@ -278,14 +278,14 @@ p{margin-bottom: 0}
     /*margin-left: 25%;*/
     width: 20px;
     height: 20px;
-    background-image: url('../images/filter_icon.png');
+    background-image: url('/images/filter_icon.png');
     background-repeat: no-repeat;
 }
 .icon-question{
     margin: 0 auto;
     width: 20px;
     height: 20px;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     background-position: -363px 3px;
 
@@ -302,7 +302,7 @@ p{margin-bottom: 0}
 
 .icon-discount{
     position: absolute; left: -15px; width: 30px; height: 30px;
-    background-image: url('../images/sprite-other-30x.png');
+    background-image: url('/images/sprite-other-30x.png');
     background-repeat: no-repeat;
     background-position: -144px 0;
     margin-top: 4px;

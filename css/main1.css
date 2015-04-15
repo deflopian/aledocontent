@@ -1,6 +1,6 @@
 .icon-offer {
     width: 30px; height: 30px;
-    background-image: url('../images/offer-icon.png');
+    background-image: url('/images/offer-icon.png');
     background-repeat: no-repeat;
 }
 
@@ -16,7 +16,7 @@
     display: inline-block;
     height: 14px;
     width: 14px;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     cursor: pointer;
     background-position: -29px 3px;
@@ -306,7 +306,7 @@
 .arrow-aledo-big, .arrow-aledo-big-solutions{
     height: 30px;
     width: 30px;
-    background-image: url('../images/sprite-other-30x.png');
+    background-image: url('/images/sprite-other-30x.png');
     background-repeat: no-repeat;
 }
 .arrow-aledo-big.arrow-left, .arrow-aledo-big-solutions.arrow-left{background-position: -115px 4px;}
@@ -315,7 +315,7 @@
 .arrow-aledo-large{
     height: 60px;
     width: 30px;
-    background-image: url('../images/arrows.svg');
+    background-image: url('/images/arrows.svg');
     background-repeat: no-repeat;
 }
 .arrow-aledo-large.arrow-left {background-position: 0 0}
@@ -416,7 +416,7 @@ input[type="checkbox"] + label::before{
     height: 16px;
     width: 16px;
     margin: 0 5px -4px 0;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
 }
 input[type="checkbox"] + label::before{ background-position: -112px 0; }
@@ -453,7 +453,7 @@ input[type="radio"] + label::before{
     height: 16px;
     width: 16px;
     margin: 0 5px -4px 0;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
 }
 input[type="radio"] + label::before{ background-position: -383px 0; }
@@ -493,7 +493,7 @@ input[type="checkbox"].filter-checkbox:checked + label::after
     vertical-align: middle;
     line-height: inherit;
     background-position: 0 5px;
-    background-image: url('../images/filter_cross_icon.png');
+    background-image: url('/images/filter_cross_icon.png');
     width: 15px;
     height: 15px;
     margin-right: -15px;
@@ -539,7 +539,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
     height: 30px;
     width: 30px;
     border: 3px solid #85878A;
-    background-image: url('../images/sprite-other-30x.png');
+    background-image: url('/images/sprite-other-30x.png');
     background-repeat: no-repeat;
     background-position: 4px 1px;
 }
@@ -588,7 +588,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
     width: 14px;
     background-color: #D0D0D1;
     border: 1px solid #808080;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -613,7 +613,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
 .aledo-cross, .aledo-cross-white{
     height: 16px;
     width: 16px;
-    background-image: url('../images/sprite-other.png');
+    background-image: url('/images/sprite-other.png');
     background-repeat: no-repeat;
     background-position: -161px -1px;
     cursor: pointer;
@@ -635,7 +635,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
 .services-block{ height: 150px; overflow: hidden }
 .services-block.kaledoscop{
     height: 85px;
-    background-image: url('../images/sprite-other-30x.png'); background-repeat: no-repeat;
+    background-image: url('/images/sprite-other-30x.png'); background-repeat: no-repeat;
 }
 .services-also-watch { margin-top: 4px; padding-left: 10px}
 .services-kaledoscop-link{ font-size: 12px; color: #231F20 }
@@ -692,7 +692,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
 
     height: 20px;
     width: 18px;
-    background-image: url('../images/sprite-arrows.png');
+    background-image: url('/images/sprite-arrows.png');
 
     background-position: -24px -1px;
     background-repeat: no-repeat;
@@ -702,7 +702,7 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
     display: inline-block;
     height: 20px;
     width: 20px;
-    background-image: url('../images/sprite-arrows.png');
+    background-image: url('/images/sprite-arrows.png');
     background-position: -41px 2px;
     background-repeat: no-repeat;
 }

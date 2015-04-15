@@ -131,3 +131,11 @@
 .b-section__content_catalog{
     width:1000px;
 }
+
+.delivery-details {
+    padding-left: 80px;
+}
+
+.b-advantages__link_button:first-child {
+    margin-left: 0;
+}
