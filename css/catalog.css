@@ -216,7 +216,7 @@ a.catalog-bar {
 h3{margin-top: 5px; margin-bottom: 0}
 p{margin-bottom: 0}
 
-.table-products td{ vertical-align: middle !important; }
+.table-products td{ vertical-align: middle !important;   text-align: center;}
 
 
 .buy-arrow{
