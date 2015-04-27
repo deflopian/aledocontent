@@ -139,3 +139,16 @@
 .b-advantages__link_button:first-child {
     margin-left: 0;
 }
+
+.b-tabs-wrapper_payment-nav .b-tabs .b-tabs__tab .b-tabs__link {
+    text-decoration: underline;
+}
+
+.b-tabs-wrapper .b-tabs__tab.active .b-tabs__link {
+    text-decoration: none;
+}
+
+.popup-register, .popup-service {
+    width: 550px;
+    margin-left: calc(50% - 275px);
+}
