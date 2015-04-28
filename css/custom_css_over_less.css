@@ -18,7 +18,9 @@
 }
 
 .b-section__content-breadcrumbs {
-    padding-top: 20px;
+    font-size: 1.2rem;
+    border-bottom: 2px #c8caca solid;
+    line-height: 1.1;
 }
 
 .b-section__content-subsection-title {

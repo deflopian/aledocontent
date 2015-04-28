@@ -120,7 +120,7 @@ a.catalog-bar {
 .no-tb-padding{ padding-top: 0 !important; padding-bottom: 0 !important;}
 
 
-.catalog-filter h2 { margin-top: 0}
+.catalog-filter h2 { margin-top: 2px}
 .catalog-filter, .panel-catalog-filter .panel-title { font-size: 12px; }
 .panel-catalog-filter .panel-title {}
 
@@ -169,23 +169,23 @@ a.catalog-bar {
     margin-right: 6px;
 }
 
-.catalog .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #555555;
-    vertical-align: middle;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
+/*.catalog .form-control {*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*height: 34px;*/
+    /*padding: 6px 12px;*/
+    /*font-size: 14px;*/
+    /*line-height: 1.428571429;*/
+    /*color: #555555;*/
+    /*vertical-align: middle;*/
+    /*background-color: #ffffff;*/
+    /*border: 1px solid #cccccc;*/
     /* border-radius: 4px; */
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
+    /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    /*box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);*/
+    /*-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;*/
+    /*transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;*/
+/*}*/
 .catalog .form-group:before, .catalog .form-group:after {
     display: table;
     content: " ";
@@ -201,11 +201,19 @@ a.catalog-bar {
 .panel-heading a .filter-arrow,
 #seo-title .filter-arrow{
     background-image: url('/images/sprite-other.png');
-    background-position: -27px 6px;
+    background-position-x: -27px;
     background-repeat: no-repeat;
 }
+
+#seo-title .filter-arrow {
+    background-position-y: 6px;
+}
 .panel-heading a.collapsed .filter-arrow,
-#seo-title .filter-arrow.closed{ background-position: -11px 4px; }
+#seo-title .filter-arrow.closed{ background-position-x: -11px; }
+
+#seo-title .filter-arrow.closed {
+    background-position-y: 4px;
+}
 .panel-catalog-filter .panel-body{ padding-top: 10px}
 
 #seo-title .show-btn {padding-left: 20px; vertical-align: 5px; cursor: pointer; color: #666666}
@@ -435,7 +443,7 @@ tr.highlighted > td, tr.highlighted:hover > td{ background-color: rgba(195, 207,
 /*.dotted-bottom.catalog-sec-33{ background-color: rgb(204, 28, 36); } *//* led питание*/
 /***********/
 
-#filter-result .filter-container{ background-color: #808080; color: #CCCCCC !important; padding-top: 7px; font-weight: bold;}
+#filter-result .filter-container{ background-color: #808080; color: #CCCCCC !important; font-weight: bold;}
 #filter-result h4{ margin-top: 15px; padding-left: 10px; }
 
 .filter-elem{
@@ -477,7 +485,7 @@ tr.highlighted > td, tr.highlighted:hover > td{ background-color: rgba(195, 207,
     border-left: 10px solid transparent;
 }
 
-.filter-measure{ position: absolute; right: -20px; top: 3px;}
+/*.filter-measure{ position: absolute; right: -20px; top: 3px;}*/
 
 .equal-block{
     display: inline-block;

@@ -87,7 +87,7 @@
 	background: #CCCCCC;
 }
 .noUi-connect {
-	background: #BCC909;
+	background: #dedfb3;
 -webkit-transition: background 450ms;
 	transition: background 450ms;
 }
@@ -128,5 +128,5 @@
  */
 .noUi-state-blocked.noUi-connect,
 .noUi-state-blocked .noUi-connect {
-	background: #BCC909;
+	background: #dedfb3;
 }

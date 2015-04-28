@@ -387,8 +387,8 @@
 .form-title{ font-size: 14px;}
 .control-label{font-weight: normal}
 .panel-slider .control-label{margin-top: 2px}
-.panel-slider {margin-left: 0; margin-right: 15px}
-.panel-checkbox {margin-left: -30px}
+/*.panel-slider {margin-left: 0; margin-right: 15px}*/
+/*.panel-checkbox {margin-left: -30px}*/
 .aledo-form label{font-size: 12px; }
 .aledo-form select{font-size: 12px !important; }
 
@@ -404,7 +404,7 @@
 
 .catalog .form-control {
 
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .small-input {
