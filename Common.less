@@ -4590,7 +4590,7 @@ textarea.b-form-control {
 }
 
 .b-breadcrumbs {
-  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
 
   &_catalog {
     margin-top: -2px;
@@ -4609,7 +4609,29 @@ textarea.b-form-control {
       }
     }
   }
+
+
 }
+
+.b-section__content-breadcrumbs {
+  font-size: 1.2rem;
+  //border-bottom: 2px #c8caca solid;
+  line-height: 1.2;
+
+  & .b-breadcrumbs {
+    border-bottom: 2px #c8caca solid;
+  }
+
+  &.breadcumbs_ontop {
+    padding-left: 30px;
+    margin-top: 1.2rem;
+
+
+  }
+}
+
+
+
 
 .fancybox {
   &-lock &-overlay {
@@ -4890,4 +4912,9 @@ textarea.b-form-control {
   & h4 {
     font-size: 1.4rem;
   }
+}
+
+.button-back {
+  margin-top: 2rem;
+  border: 1px solid @gray_l_color;
 }
