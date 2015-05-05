@@ -798,7 +798,7 @@ body {
   position: absolute;
   width: 23rem;
   right: 18rem;
-
+  pointer-events: none;
   &_our-team {
     left: 25rem;
     right: auto;
@@ -811,44 +811,52 @@ body {
   }
 }
 
+html:not(.b-html_mobile) {
+
+  .b-slider-outer {
+    &:hover {
+      .b-slider-arrows {
+        &__arrow {
+          visibility: visible;
+
+        }
+      }
+    }
+  }
+}
+
 .b-slider-arrows {
   z-index: 1;
   height: 0;
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
 
   &__arrow {
     z-index: 10000;
+    visibility: hidden;
   }
 
   &__arrow {
     display: block;
-    width: 3.4rem;
-    height: 3.4rem;
+    width: 7rem;
+    height: 7rem;
     position: absolute;
-    background: rgba(red(#fff), green(#fff), blue(#fff), .7);
+    background-color: rgba(red(#fff), green(#fff), blue(#fff), .85);
     cursor: pointer;
-
-    &:after {
-      position: absolute;
-      content: " ";
-      width: 1.2rem;
-      height: 2.2rem;
-      background: url("/Content/images/button-arrow-white-big.svg") 0 0 no-repeat;
-      background-size: contain;
-      left: 50%;
-      top: 50%;
-      margin-left: -0.6rem;
-      margin-top: -1.1rem;
-    }
+    background-image: url("/Content/images/slider-arrow.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &_show-room {
       width: 4rem;
       height: 6.5rem;
       background: transparent;
-
       &:after {
+        content: "";
+        position: absolute;
         left: 0;
         top: 0;
         width: 100%;
@@ -867,30 +875,29 @@ body {
     }
 
     &_prev {
-      left: 4rem;
+      left: 0;
 
       &:after {
         .rotate(180deg);
       }
     }
+    &_next:not(.b-slider-arrows_arrow_show-room) {
+      .rotate(180deg);
+    }
 
     &_next {
-      right: 4rem;
+      right: 0;
     }
 
     &_show-room {
       bottom: 35rem;
       margin-bottom: -3.25rem;
-
-      &_prev, &_next {
-      }
-
       &_next {
-        right: 4rem;
+        right: 1rem;
       }
 
       &_prev {
-        left: 4rem;
+        left: 1rem;
       }
 
       &_prev {
@@ -913,11 +920,11 @@ body {
     &__arrow {
       &_show-room {
         &_next {
-          right: -4rem;
+          right: -5rem;
         }
 
         &_prev {
-          left: -4rem;
+          left: -5rem;
         }
       }
     }
@@ -927,13 +934,12 @@ body {
 .b-html_uncorrect-bg-svg {
   .b-slider-arrows {
     &__arrow {
-
-      &:after {
-        background: url("/Content/images/button-arrow-white.png") 0 0 no-repeat;
-        background-size: contain;
-      }
+      background-image: url("/Content/images/slider-arrow.png");
+      .opacity(0.85);
+      background-size: contain;
 
       &_show-room {
+        background: transparent;
         &:after {
           background: url("/Content/images/button-arrow-white-big-thin.png") 0 0 no-repeat;
           background-size: contain;
@@ -969,7 +975,8 @@ body {
 
   &__item {
     height: 40rem;
-    padding-right: 0.4rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
   }
 
   &__item:last-child {
@@ -995,7 +1002,7 @@ body {
 
 .b-project-products__product-name {
   margin-top: 0;
-  height: @headings-line-height * (@font-size-h4 * 2);
+  height: @line-height-base * (@font-size-h4 * 2);
   overflow: hidden;
   text-transform: uppercase;
 }
@@ -4479,6 +4486,7 @@ textarea.b-form-control {
         display: block;
         height: 100%;
         width: auto;
+        max-width: none;
       }
 
       &:last-child {
@@ -4590,7 +4598,14 @@ textarea.b-form-control {
 }
 
 .b-breadcrumbs {
+
   padding-bottom: 1.2rem;
+
+//  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  &_no-mt{
+    margin-top: 0;
+  }
 
   &_catalog {
     margin-top: -2px;
@@ -4793,16 +4808,18 @@ textarea.b-form-control {
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:6.5rem 0 6.5rem 7.5rem;
+    padding: 6.5rem 0 6.5rem 7.5rem;
   }
-  &__link{
-    color:#565656;
+  &__link {
+    color: #565656;
   }
 
 }
+
 .b-mobile-redirect-dialog {
-  &__content{
-    text-align:center;
+  &__content {
+    text-align: center;
+    font-size: 2.6rem;
   }
   &__link {
     display: block;
@@ -4821,7 +4838,6 @@ textarea.b-form-control {
   &-form__panel .panel-heading {
     background-color: rgba(red(#c8caca), green(#c8caca), blue(#c8caca), 0.5);
 
-
     &__link {
       font-weight: bold;
       text-decoration: none;
@@ -4836,7 +4852,6 @@ textarea.b-form-control {
     &__link.collapsed .panel-heading__icon {
       background-position-y: 6px;
     }
-
 
   }
   &-form__panel .panel-body {
@@ -4881,7 +4896,6 @@ textarea.b-form-control {
         height: 10px;
       }
 
-
     }
   }
 
@@ -4917,4 +4931,187 @@ textarea.b-form-control {
 .button-back {
   margin-top: 2rem;
   border: 1px solid @gray_l_color;
+}
+
+.b-downloads_catalogs {
+  background: rgba(157, 165, 168, 0.5);
+}
+
+.b-section_certificates {
+  background-size: auto 100%;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: #e4e3e8;
+  padding: 10rem 0 11.5rem;
+}
+
+.b-section_catalogs {
+  background-size: auto 100%;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: #eaceb8;
+  padding: 14rem 0 13.2rem;
+}
+
+.b-section__content-breadcrumbs {
+  font-size: 1.2rem;
+  border-bottom: 2px #c8caca solid;
+  line-height: 1.1;
+}
+
+.b-section__content-subsection-title {
+  padding: 10px 10px;
+  font-size: 12px;
+  height: 70px;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-decoration: underline;
+}
+
+.b-slider__title {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-top: 8px;
+  text-align: center;
+  color: #000000;
+}
+
+.b-slider__title-post {
+  line-height: 10px;
+  vertical-align: bottom;
+  white-space: normal;
+  font-size: 1.3rem;
+}
+
+.b-slider__document-title {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  width: 100%;
+  line-height: 50px;
+  vertical-align: middle;
+  height: 50px;
+  text-align: center;
+  color: #626363;
+}
+
+.b-slider__document-title-name {
+  vertical-align: middle;
+  white-space: normal;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.b-slider__title-name {
+  font-size: 1.6rem;
+}
+
+.b-section_reviews {
+  padding-bottom: 8rem;
+}
+
+.b-section__content-all_projects {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.b-button_yellow-background {
+  background-color: #d0d434;
+}
+
+.b-html_no-touch .b-button_gray-colored.b-button_all-projects:hover {
+  border-color: #8e9192;
+  color: #8e9192;
+}
+
+.b-html_no-touch .b-solutions-item__link:hover .b-button_solutions {
+  background-color: rgba(80, 80, 80, 1);
+}
+
+.b-html_no-touch .b-solutions-item__link .b-button_solutions {
+  background-color: rgba(80, 80, 80, 0.6);
+}
+
+.b-mobile-catalog__item {
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  padding: 6.5rem 0 6.5rem 7.5rem;
+  border-top: 1px dotted #6E7172;
+}
+
+.b-mobile-catalog__link {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.b-mobile-redirect-dialog {
+  padding: 1rem;
+  vertical-align: middle;
+  border: 7px solid rgba(255, 255, 255, 0.8);
+}
+
+.b-mobile-redirect-dialog__content {
+  text-align: center;
+  padding: 4.5rem 6.5rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#catalog_mobile_redirect {
+  font-size: 0;
+  white-space: nowrap;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+@media screen and (min-width: @screen-md) {
+  #catalog_mobile_redirect {
+    display: none !important;
+  }
+}
+
+.b-mobile-redirect-dialog__link {
+  display: block;
+  cursor: pointer;
+}
+
+.b-section__content_catalog {
+  width: 1000px;
+}
+
+.delivery-details {
+  padding-left: 80px;
+}
+
+.b-advantages__link_button:first-child {
+  margin-left: 0;
+}
+
+.b-tabs-wrapper_payment-nav .b-tabs .b-tabs__tab .b-tabs__link {
+  text-decoration: underline;
+}
+
+.b-tabs-wrapper .b-tabs__tab.active .b-tabs__link {
+  text-decoration: none;
+}
+
+.popup-register, .popup-service {
+  width: 550px;
+  margin-left: calc(50% - 275px);
+}
+
+.b-html_mobile {
+  .b-slider_our-team {
+    white-space: nowrap;
+    font-size: 0;
+    overflow-x: auto;
+  }
 }
