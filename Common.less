@@ -5182,6 +5182,41 @@ textarea.b-form-control {
   }
 }
 
+.b-section-dimmers {
+  max-width: 60%;
+  &__item {
+    border-bottom: 1px solid #c8caca;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    overflow: auto;
+    &:first-child {
+      padding-top: 5px;
+      border-top: 1px solid #c8caca;
+    }
+
+    &-link {
+      display: block;
+      text-decoration: none;
+    }
+    &-icon {
+      width: 30px;
+      height: 30px;
+      border-width: 2px;
+      vertical-align: middle;
+      background-color: #ffffff;
+
+    }
+
+    &:hover &-icon {
+      background-color: #eff0f0;
+    }
+    &-title {
+      vertical-align: middle;
+      line-height: 30px;
+    }
+  }
+}
+
 .b-links {
   &__h2 {
     font-size: 12px;
@@ -5194,7 +5229,8 @@ textarea.b-form-control {
 .series-description-block {
   &__title {
     font-size: 1.8rem;
-    font-weight: bold;
+    font-family: Arial, Verdana, sans-serif;
+    /* font-weight: bold; */
     margin-bottom: 0;
   }
 }
