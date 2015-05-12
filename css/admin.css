@@ -29,6 +29,17 @@ footer { /* Set the fixed height of the footer here */
     display: block;
 }
 
+
+.kp-icon {
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.kp-icon:hover {
+    text-decoration: underline;
+
+}
+
 .pristineDiscount {
     color: indianred;
     font-weight: bold;
