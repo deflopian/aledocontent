@@ -2280,7 +2280,7 @@ html:not(.b-html_mobile) {
   }
   &-banner {
     background: #e0e0e0;
-
+    margin-bottom: 0;
     &__image {
       max-width: 100%;
       max-height: 40rem;
@@ -4981,6 +4981,7 @@ textarea.b-form-control {
     border: 0.2rem solid @yellow_color;
     color: @gray_color;
     text-align: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -5104,6 +5105,13 @@ textarea.b-form-control {
   background-size: auto 100%;
   padding: 6.5rem 0 6.5rem 7.5rem;
   border-top: 1px dotted #6E7172;
+}
+.b-mobile-catalog__item_subsection {
+  background-position: 100% 60%;
+  background-color: rgba(255,255,255,0.6);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-size: auto 160%;
 }
 
 .b-mobile-catalog__link {
@@ -5332,12 +5340,19 @@ textarea.b-form-control {
       vertical-align: middle;
       display: inline-block;
     }
+
+    &:hover img {
+        -webkit-filter: grayscale(0);
+    }
   }
+
   &__image {
     max-height: 100%;
     max-width: 100%;
     vertical-align: middle;
+    -webkit-filter: grayscale(100%);
     display: inline-block !important;
+
   }
 }
 
@@ -5372,6 +5387,10 @@ textarea.b-form-control {
 .b-our-projects {
   background: #e1e1e1 url("/Content/images/main-page/bg/bg_2.jpg") 0 0 no-repeat;
   background-size: auto 100%;
+}
+.b-our-clients {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
 }
 
 .b-simple-arrow {
@@ -5409,4 +5428,64 @@ textarea.b-form-control {
       background-size: 100% 100%;
     }
   }
+}
+
+.b-slider_banners__arrow.b-slider_blog__arrow_prev {
+  left: 4rem;
+}
+.b-slider_banners__arrow.b-slider_blog__arrow_next {
+  right: 4rem;
+}
+
+.aledo-banner-chevron.right {
+  right: 0;
+  float: right;
+  background-position: -197px 9px;
+}
+.aledo-banner-chevron.left {
+  left: 0;
+  float: left;
+  background-position: -229px 9px;
+}
+
+
+
+.aledo-banner-chevron {
+  top: 45%;
+  padding: 10px;
+  background-color: rgba(1, 1, 1, 0.8);
+  position: absolute;
+  max-width: 40px;
+  max-height: 40px;
+  width: 40px;
+  height: 40px;
+  display: none;
+  background-image: url('../images/sprite-other-30x.png');
+  background-repeat: no-repeat;
+}
+.carousel-control.right {
+  right: 0;
+  left: auto;
+}
+.carousel-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.carousel-control:hover .aledo-banner-chevron {
+  display: block;
+}
+
+.b-links__h2 {
+  font-size: 12px;
+  letter-spacing: normal;
+  font-family: Arial, sans-serif;
 }
