@@ -182,7 +182,7 @@ a {
     text-decoration: none;
   }
 
-  &[href^="tel"] {
+  &.link_tel {
     text-decoration: none;
   }
 
@@ -1982,7 +1982,7 @@ html:not(.b-html_mobile) {
     display: inline-block;
     font-size: 1.2rem;
 
-    &[href^="tel"] {
+    &.link_tel {
       font-size: 1.4rem;
     }
 
@@ -5434,6 +5434,11 @@ textarea.b-form-control {
   width: 100%;
   height: 20rem;
   margin: 0 auto;
+}
+
+.b-slider_banners__item {
+  width: 100%;
+
 }
 
 .b-slider_banners__arrow.b-slider_blog__arrow_prev {
