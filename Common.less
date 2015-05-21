@@ -865,9 +865,6 @@ html:not(.b-html_mobile) {
   &__arrow {
     z-index: 10000;
     visibility: hidden;
-  }
-
-  &__arrow {
     display: block;
     width: 7rem;
     height: 7rem;
@@ -878,7 +875,10 @@ html:not(.b-html_mobile) {
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-
+    &_our-team {
+      width: 5rem;
+      height: 5rem;
+    }
     &_show-room {
       width: 4rem;
       height: 6.5rem;
@@ -981,7 +981,6 @@ html:not(.b-html_mobile) {
 .b-slider {
   margin: 0;
   .clearfix();
-
   &_no-slider {
     text-align: center !important;
 
@@ -989,7 +988,13 @@ html:not(.b-html_mobile) {
       display: inline-block !important;
     }
   }
-
+  &_banners {
+    max-height: 40rem;
+    overflow: hidden;
+    &__slider{
+      vertical-align: middle;
+    }
+  }
   &_show-room {
     .b-slider__item {
       height: 66.8rem;
@@ -4805,6 +4810,10 @@ textarea.b-form-control {
 }
 
 .slick-slider {
+  visibility: hidden;
+  &.slick-initialized {
+    visibility: visible;
+  }
   .slick-track {
     white-space: nowrap;
     font-size: 0;
@@ -5106,9 +5115,10 @@ textarea.b-form-control {
   padding: 6.5rem 0 6.5rem 7.5rem;
   border-top: 1px dotted #6E7172;
 }
+
 .b-mobile-catalog__item_subsection {
   background-position: 100% 60%;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: auto 160%;
@@ -5350,8 +5360,8 @@ textarea.b-form-control {
     }
 
     &:hover img {
-        -webkit-filter: grayscale(0);
-  }
+      -webkit-filter: grayscale(0);
+    }
   }
 
   &__image {
@@ -5396,6 +5406,7 @@ textarea.b-form-control {
   background: #e1e1e1 url("/Content/images/main-page/bg/bg_2.jpg") 0 0 no-repeat;
   background-size: auto 100%;
 }
+
 .b-our-clients {
   padding-top: 8rem;
   padding-bottom: 10rem;
@@ -5453,6 +5464,7 @@ textarea.b-form-control {
 .b-slider_banners__arrow.b-slider_blog__arrow_prev {
   left: 4rem;
 }
+
 .b-slider_banners__arrow.b-slider_blog__arrow_next {
   right: 4rem;
 }
@@ -5462,13 +5474,12 @@ textarea.b-form-control {
   float: right;
   background-position: -197px 9px;
 }
+
 .aledo-banner-chevron.left {
   left: 0;
   float: left;
   background-position: -229px 9px;
 }
-
-
 
 .aledo-banner-chevron {
   top: 45%;
@@ -5483,10 +5494,12 @@ textarea.b-form-control {
   background-image: url('../images/sprite-other-30x.png');
   background-repeat: no-repeat;
 }
+
 .carousel-control.right {
   right: 0;
   left: auto;
 }
+
 .carousel-control {
   position: absolute;
   top: 0;
@@ -5500,6 +5513,7 @@ textarea.b-form-control {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+
 .carousel-control:hover .aledo-banner-chevron {
   display: block;
 }
