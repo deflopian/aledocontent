@@ -2721,6 +2721,7 @@ html:not(.b-html_mobile) {
   width: 100%;
   display: table;
   table-layout: fixed;
+  margin-bottom: 2rem;
 }
 
 .b-contacts-page {
@@ -2735,16 +2736,16 @@ html:not(.b-html_mobile) {
   &__heading {
 
     &:after {
-      bottom: -2.7rem;
+      bottom: -0.7rem;
     }
 
-    margin-bottom: 4.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 
 .b-routing-map {
   height: 30rem;
-  margin: 1rem 0;
+  margin: 3rem 0;
 
   img {
     max-width: none;
@@ -5270,6 +5271,14 @@ textarea.b-form-control {
   }
 }
 
+#main-cart:after {
+  background-color: @yellow_color;
+}
+
+#main-cart.cart-empty:after {
+  background-color: transparent;
+}
+
 #main-cart.cart-empty > #main-cart-badge {
   display: none
 }
@@ -5438,7 +5447,7 @@ textarea.b-form-control {
 
 .b-slider_banners__item {
   width: 100%;
-
+  height: auto;
 }
 
 .b-slider_banners__arrow.b-slider_blog__arrow_prev {
