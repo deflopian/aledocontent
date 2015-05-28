@@ -2071,7 +2071,7 @@ html:not(.b-html_mobile) {
     font-size: 1.4rem;
 
     &_payment {
-      width: 16rem;
+      width: 18rem;
     }
 
     &-active {
@@ -5345,6 +5345,16 @@ textarea.b-form-control {
     height: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.b-slider_projects {
+  &__image {
+    -webkit-filter: grayscale(0.3);
+  }
+  .b-slider-item-layout:hover ~ &__image
+  {
+    -webkit-filter: grayscale(0);
   }
 }
 

@@ -180,9 +180,9 @@
 
 .catalog td {
     padding: 0;
-    padding-left: 8px;
+    /*padding-left: 8px;*/
     font-size: 13px;
-    padding-right: 5px;
+    /*padding-right: 5px;*/
     line-height: 1.428571429;
     vertical-align: top;
     border-top: 1px solid #dddddd;
@@ -512,11 +512,14 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
 .table-aledo td{
     border-top: none !important;
 }
+
 .table-aledo th{
     border-bottom: none !important;
     font-weight: normal;
     color: #9A9C9E;
     font-size: 12px;
+    padding: 6px 3px;
+    min-height: 25px;
 }
 
 
