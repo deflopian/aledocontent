@@ -120,7 +120,10 @@ a.catalog-bar {
 .no-tb-padding{ padding-top: 0 !important; padding-bottom: 0 !important;}
 
 
-.catalog-filter h2 { margin-top: 2px}
+.catalog-filter h2 {
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
 .catalog-filter, .panel-catalog-filter .panel-title { font-size: 12px; }
 .panel-catalog-filter .panel-title {}
 
