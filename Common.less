@@ -996,7 +996,7 @@ html:not(.b-html_mobile) {
   &_banners {
     max-height: 40rem;
     overflow: hidden;
-    &__slider{
+    &__slider {
       vertical-align: middle;
     }
   }
@@ -5532,4 +5532,135 @@ textarea.b-form-control {
   font-size: 12px;
   letter-spacing: normal;
   font-family: Arial, sans-serif;
+}
+
+.b-blog {
+  &-article {
+    padding: 8rem 0;
+    &:nth-of-type(2n) {
+      background-color: #f4f4f4;
+    }
+    &__link-more {
+      .opacity(0.6);
+    }
+    &__text {
+
+    }
+    &__inner {
+      display: table;
+      width: 100%;
+    }
+    &-rubrics {
+      margin-bottom: 3rem;
+      &__item {
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
+    &__heading {
+      margin: 0 0 1rem 0;
+    }
+    &__left, &__right {
+      display: table-cell;
+      vertical-align: top;
+    }
+    &__right {
+      padding-top: 4rem;
+    }
+    &__left {
+      padding-right: 5.5rem;
+    }
+    &__image {
+      width: 28rem;
+      height: 28rem;
+      display: block;
+      max-width: none;
+
+    }
+    &__preview {
+      padding: 0 2.5rem;
+      border-left: 1px dotted @gray_color;
+    }
+  }
+  &__phrase {
+    max-width: 800px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    font-size: @font-size-base;
+    white-space: normal;
+
+  }
+  &-header {
+    position: relative;
+    height: 29rem;
+    padding: 0 2rem;
+
+    background: #ecedf1 url("/Content/images/blog/bg/bg_1.jpg") 100% 0 no-repeat;
+    background-size: auto 100%;
+    white-space: nowrap;
+    font-size: 0;
+    text-align: center;
+    &:before {
+      vertical-align: middle;
+      content: "";
+      height: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+.b-phrase {
+  padding: 1rem;
+  background: rgba(red(@yellow_color), green(@yellow_color), blue(@yellow_color), 0.8);
+  &-table {
+    display: table;
+    width: 100%;
+    &__left {
+      display: table-cell;
+      vertical-align: top;
+      padding: 1rem 4rem;
+    }
+    &__right {
+      width: 100%;
+      vertical-align: middle;
+      padding: 1rem 4rem;
+      display: table-cell;
+      border-left: 1px dotted white;
+      line-height: @line-height-bigger;
+      font-size: 2rem;
+      text-align: left;
+      color: white;
+      letter-spacing: 0.06rem;
+    }
+  }
+  &__icon {
+    width: 10rem;
+    display: block;
+    max-width: none;
+
+  }
+
+  &-outer {
+    padding: 1.5rem;
+    border: 0.6rem solid white;
+  }
+}
+
+.b-article {
+  max-width: 750px;
+  margin:0 auto;
+  padding: 1rem 0 3rem;
+  img{
+    margin: 4.5rem auto;
+    display:block;
+  }
+  &__separator{
+    margin:2.6rem 0;
+  }
+  &__heading{
+    margin:2.6rem 0;
+    text-align:center;
+  }
+
 }
