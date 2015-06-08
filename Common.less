@@ -1988,6 +1988,16 @@ html:not(.b-html_mobile) {
     }
   }
 
+  &__we-work {
+    &__list-item {
+      border: none;
+      padding: 0 2rem;
+
+      min-width: 1px;
+      min-height: 1px;
+    }
+  }
+
   &__link {
     display: inline-block;
     font-size: 1.2rem;
@@ -5695,4 +5705,17 @@ textarea.b-form-control {
 .filter-column-header_tag {
 
   margin-right: 10px;
+}
+
+.attention-block {
+  font-size: 1.8rem;
+  padding-top: 5px;
+  &_important {
+    color: #d65a65;
+  }
+
+  &_message {
+    margin-left: 5px;
+    text-decoration: underline;
+  }
 }
