@@ -443,7 +443,7 @@ img {
 }
 
 .b-form-error {
-  color : #f23951;
+  color: #f23951;
   display: block;
 }
 
@@ -2484,7 +2484,8 @@ html:not(.b-html_mobile) {
     }
   }
 
-  &_about {
+  &_about,
+  &_developers {
     .make-row(5px);
     margin-bottom: 3rem;
 
@@ -2629,10 +2630,12 @@ html:not(.b-html_mobile) {
     }
 
     &__item {
-      display: none;
-
+      height: 0;
+      overflow: hidden;
       &.active {
-        display: block;
+        overflow: visible;
+        height: auto;
+
       }
     }
   }
@@ -2748,7 +2751,7 @@ html:not(.b-html_mobile) {
 
 .b-contacts-cell {
   display: table-cell;
-//  padding: 2.2rem 0 0;
+  //  padding: 2.2rem 0 0;
   width: 50%;
 
   &__heading {
@@ -4526,8 +4529,8 @@ textarea.b-form-control {
     font-size: 0;
     padding-bottom: 1.2rem;
     margin-bottom: 2rem;
-//    padding-top: 1.2rem;
-//    border-top: 1px dotted @gray_color;
+    //    padding-top: 1.2rem;
+    //    border-top: 1px dotted @gray_color;
     border-bottom: 1px dotted @gray_color;
     text-align: center;
 
@@ -5547,6 +5550,44 @@ textarea.b-form-control {
   font-family: Arial, sans-serif;
 }
 
+.b-developer {
+  &s{
+    padding-bottom: 2rem;
+  }
+  &__link-more {
+    .opacity(0.6);
+  }
+
+  &__left {
+    width: 19rem;
+  }
+  display: table;
+  width: 100%;
+  padding: 3rem 0;
+  &__heading {
+    margin: 0 0 1rem 0;
+  }
+  &__right, &__left {
+    display: table-cell;
+    vertical-align: top;
+  }
+  &__left{
+    padding-right: 2.5rem;
+  }
+  &__right {
+    position: relative;
+    padding-left: 2.5rem;
+    .dotted-separator {
+      position: absolute;
+      left: 0;
+      height: 70%;
+      border: 0;
+      width: 0;
+      border-right: 1px dotted @gray_color;
+    }
+  }
+}
+
 .b-blog {
   &-article {
     padding: 4rem 0;
@@ -5664,18 +5705,18 @@ textarea.b-form-control {
 
 .b-article {
   max-width: 750px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 1rem 0 3rem;
-  img{
+  img {
     margin: 4.5rem auto;
-    display:block;
+    display: block;
   }
-  &__separator{
-    margin:2.6rem 0;
+  &__separator {
+    margin: 2.6rem 0;
   }
-  &__heading{
-    margin:2.6rem 0;
-    text-align:center;
+  &__heading {
+    margin: 2.6rem 0;
+    text-align: center;
   }
 
 }
@@ -5700,7 +5741,7 @@ textarea.b-form-control {
 
 .filter-column-header_icon, .filter-column-header_tag {
   padding: 0 3px;
-  float:left;
+  float: left;
 }
 
 .filter-column-header_tag {
@@ -5719,4 +5760,15 @@ textarea.b-form-control {
     margin-left: 5px;
     text-decoration: underline;
   }
+}
+
+.b-tabs-wrapper_developers {
+  &__buttons {
+
+    max-width: 65rem;
+  }
+}
+
+.b-section__content_developers {
+  padding-left: 15rem;
 }
