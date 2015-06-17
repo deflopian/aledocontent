@@ -534,13 +534,18 @@ input[type="checkbox"].filter-checkbox:checked + label { border-bottom: dotted 1
 
 
 .tile-title-series{
-    padding: 0 10px;
+    /*padding: 0 10px;*/
+    padding: 0;
     font-size: 13px;
     height: 65px;
     margin-top: 5%;
     text-transform: uppercase;
     background-color: rgba(255, 255, 255, 0.9);
     text-decoration: underline;
+}
+.subsection .tile-title-series{
+    height: 37px;
+    line-height: 17px;
 }
 
 

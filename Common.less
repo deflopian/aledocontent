@@ -1967,6 +1967,7 @@ html:not(.b-html_mobile) {
 
   &__list {
     .clearfix();
+    position: relative;
     margin-bottom: 0;
   }
 
@@ -1981,7 +1982,7 @@ html:not(.b-html_mobile) {
       border: 0;
     }
 
-    &:last-child {
+    &:last-of-type {
       border-right: 0;
       border-left: 0;
       padding-right: 0;
@@ -4693,8 +4694,10 @@ textarea.b-form-control {
   margin-bottom: 14px;
   padding-top: 22px;
   &_no-mt {
-    margin-top: 0;
+//    margin-top: 0;
     padding-top: 0;
+    margin-top: 2px;
+    padding-bottom: 11px;
   }
 
   &_catalog {
@@ -5716,6 +5719,90 @@ textarea.b-form-control {
 
   &_message {
     margin-left: 5px;
-    text-decoration: underline;
   }
+
+  &_btn {
+    background-color: #d9ddac;
+    padding: 0 1.8rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #484848;
+    float: right;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+
+}
+
+.b-catalog__title-h2 {
+  font-family: Arial, sans-serif;
+  letter-spacing: normal;
+}
+
+.product-table_allmods-block {
+  border-top: 1px solid #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  &__label {
+    text-align: right;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+
+    .allmods-block__open-arrow {
+      display: inline-block;
+      width:  2.4rem;
+      height:  1.4rem;
+      background: url('css/images/button.svg') no-repeat;
+      vertical-align: middle;
+
+    }
+
+    .allmods-block__close-arrow {
+      display: inline-block;
+      width:  2.4rem;
+      height:  1.4rem;
+      background: url('css/images/button.svg') no-repeat;
+      vertical-align: middle;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      background-position-x: 4px;
+    }
+  }
+}
+
+.collback-btn {
+  position: absolute;
+  top: 2px;
+  right: -55px;
+
+  &_link {
+
+  }
+
+  &_image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#pozvonim-com-x-call {
+  width: 222px !important;
+  padding: 14px 0 !important;
+  border-radius: 5px !important;
+}
+
+#pozvonim-com-x-widget .pozvonim-com-x-btn-small-no {
+  height: 51px !important;
+  padding: 0 10px !important;
+  padding-top: 8px !important;
+  line-height: 16px !important;
+  font-size: 15px !important;
 }
