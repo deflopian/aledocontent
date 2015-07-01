@@ -104,6 +104,10 @@ small,
   text-transform: uppercase;
 }
 
+.text-nowrap {
+  white-space: nowrap;
+}
+
 .text-capitalize {
   text-transform: capitalize;
 }
@@ -1753,6 +1757,7 @@ html:not(.b-html_mobile) {
   .b-header-top-section__list-item {
     padding: 0 0.5rem !important;
   }
+
   .b-solution {
     &-header {
       &__cell {
@@ -1995,7 +2000,7 @@ html:not(.b-html_mobile) {
   &__we-work {
     &__list-item {
       border: none;
-//      padding: 0 2rem;
+      //      padding: 0 2rem;
 
       min-width: 1px;
       min-height: 1px;
@@ -2519,8 +2524,8 @@ html:not(.b-html_mobile) {
         .make-row(5px);
 
         .b-tabs__tab {
-         // .make-xs-column(4, 5px);
-			.make-xs-column(6, 5px);
+          //.make-xs-column(4, 5px);
+          .make-xs-column(6, 5px);
           .b-tabs__link {
             color: #383838;
             padding: 0.5rem 0;
@@ -4327,11 +4332,18 @@ textarea.b-form-control {
   &-table {
     width: 100%;
     table-layout: fixed;
-
-    tr {
-      &:nth-last-child(2) {
-        .b-cart-product-cell {
-          border-bottom: 0.3rem solid @gray_color;
+    &_accommodation{
+      &__total{
+        padding:1rem 0;
+        padding-right: 0.5rem;
+      }
+    }
+    &:not(.b-cart-table_accommodation) {
+      tr {
+        &:nth-last-child(2) {
+          .b-cart-product-cell {
+            border-bottom: 0.3rem solid @gray_color;
+          }
         }
       }
     }
@@ -5489,12 +5501,12 @@ textarea.b-form-control {
   height: 20rem;
   margin: 0 auto;
 
-
 }
 
 #map_spb {
   padding-right: 20px;
 }
+
 #map_msc {
   padding-left: 20px;
 }
@@ -6009,6 +6021,7 @@ textarea.b-form-control {
 .b-accommodation {
   padding: 0 2.2rem;
   border: 1px solid @gray_color;
+  margin-bottom: 2rem;
   &__name {
     margin: 0;
     padding: 2rem 0;
@@ -6030,8 +6043,29 @@ textarea.b-form-control {
     }
   }
 }
-
+.b-tabs-content__item_offer{
+  padding-top:1rem;
+  padding-bottom: 3rem;
+}
 .b-offer {
+
+  &__add{
+    padding:8rem 0;
+    text-align: center;
+  }
+  &-header-table {
+    &__name {
+      margin: 0;
+    }
+    padding: 2rem 0;
+    border-collapse: separate;
+    border-top: 1px dotted @gray_color;
+    border-bottom: 1px dotted @gray_color;
+    &__id {
+      margin-right: 2rem;
+    }
+  }
+
   &-panel {
     display: table;
     border-collapse: collapse;
@@ -6051,6 +6085,7 @@ textarea.b-form-control {
 
 .b-slider {
   &_brand-catalogs {
+    margin: 0 4.1rem;
     &__item {
       height: auto;
       padding: 0;
@@ -6099,5 +6134,50 @@ textarea.b-form-control {
       }
     }
 
+  }
+}
+
+.b-editable-field{
+ display: inline-block;
+  position:relative;
+  max-width: 100%;
+  white-space: nowrap;
+  &__field,
+  &__hidden{
+    height: @font-size-h3*@headings-line-height;
+    border: 0;
+    font-family: @headings-font-family;
+    font-size: @font-size-h3;
+    line-height:@headings-line-height ;
+    padding: 0;
+    white-space: nowrap;
+
+  }
+  &__field{
+    position: absolute;
+    width:100%;
+    left:0;
+    top:0;
+
+  }
+  &__hidden{
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    visibility: hidden;
+  }
+
+  &__icon{
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    height:1.5rem;
+    margin-left: 0.2rem;
+    &:hover{
+      .b-editable-field__icon-path{
+        fill:@yellow_color;
+      }
+    }
   }
 }
