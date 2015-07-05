@@ -4332,9 +4332,9 @@ textarea.b-form-control {
   &-table {
     width: 100%;
     table-layout: fixed;
-    &_accommodation{
-      &__total{
-        padding:1rem 0;
+    &_accommodation {
+      &__total {
+        padding: 1rem 0;
         padding-right: 0.5rem;
       }
     }
@@ -6026,10 +6026,10 @@ textarea.b-form-control {
 
 .b-accommodation {
   padding: 0 2.2rem;
-  border: 1px solid @gray_color;
+  border: 1px solid #B2B2B2;
   margin-bottom: 2rem;
   &__name {
-    margin: 0;
+
     padding: 2rem 0;
   }
   &-panel {
@@ -6049,21 +6049,29 @@ textarea.b-form-control {
     }
   }
 }
-.b-tabs-content__item_offer{
-  padding-top:1rem;
+
+.b-tabs-content__item_offer {
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
+
 .b-offer {
 
-  &__add{
-    padding:8rem 0;
+  &__add {
+    padding: 8rem 0;
     text-align: center;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0;
   }
   &-header-table {
     &__name {
       margin: 0;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0;
     }
     padding: 2rem 0;
+    width: 100%;
+    table-layout: fixed;
     border-collapse: separate;
     border-top: 1px dotted @gray_color;
     border-bottom: 1px dotted @gray_color;
@@ -6143,30 +6151,49 @@ textarea.b-form-control {
   }
 }
 
-.b-editable-field{
- display: inline-block;
-  position:relative;
+.b-editable-field {
+  display: inline-block;
+  position: relative;
   max-width: 100%;
+  padding-right: 5rem;
   white-space: nowrap;
+  &_editing {
+    width: 100%;
+    .b-editable-field__inner {
+      width: 100%;
+    }
+    .b-editable-field__icon {
+      display: none;
+    }
+  }
+  &__inner {
+
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle
+  }
   &__field,
-  &__hidden{
+  &__hidden {
     height: @font-size-h3*@headings-line-height;
     border: 0;
-    font-family: @headings-font-family;
+    font-family: Arial, sans-serif;
     font-size: @font-size-h3;
-    line-height:@headings-line-height ;
+    line-height: @headings-line-height;
+    letter-spacing: 0;
     padding: 0;
     white-space: nowrap;
 
   }
-  &__field{
+  &__field {
     position: absolute;
-    width:100%;
-    left:0;
-    top:0;
-
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
   }
-  &__hidden{
+
+  &__hidden {
 
     text-overflow: ellipsis;
     overflow: hidden;
@@ -6174,15 +6201,16 @@ textarea.b-form-control {
     visibility: hidden;
   }
 
-  &__icon{
+  &__icon {
     vertical-align: middle;
     display: inline-block;
     cursor: pointer;
-    height:1.5rem;
+    height: 1.5rem;
     margin-left: 0.2rem;
-    &:hover{
-      .b-editable-field__icon-path{
-        fill:@yellow_color;
+    position: relative;
+    &:hover {
+      .b-editable-field__icon-path {
+        fill: @yellow_color;
       }
     }
   }
