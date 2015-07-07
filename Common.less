@@ -1755,7 +1755,7 @@ html:not(.b-html_mobile) {
 
 @media screen and (max-width: @screen-sm-max) {
   .b-header-top-section__list-item {
-    padding: 0 0.5rem !important;
+    padding: 0 1rem !important;
   }
 
   .b-solution {
@@ -2103,6 +2103,12 @@ html:not(.b-html_mobile) {
       background-color: @gray_l_color;
     }
   }
+}
+
+.b-main-blog {
+  width: 12rem;
+  margin: 0 auto;
+  margin-left: 4rem;
 }
 
 .b-search {
@@ -5584,7 +5590,7 @@ textarea.b-form-control {
   & a {
     text-decoration: none;
   }
-  &s{
+
   &s{
     padding-bottom: 2rem;
   }
@@ -5674,7 +5680,7 @@ textarea.b-form-control {
     }
   }
   &__phrase {
-    max-width: 800px;
+    max-width: 720px;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
@@ -5719,7 +5725,7 @@ textarea.b-form-control {
       display: table-cell;
       border-left: 1px dotted white;
       line-height: @line-height-bigger;
-      font-size: 2rem;
+      font-size: 3.3rem;
       text-align: left;
       color: white;
       letter-spacing: 0.06rem;
@@ -5783,17 +5789,19 @@ textarea.b-form-control {
 
 .filter-column {
   float: left;
+  padding-left: 3px;
+  padding-right: 3px;
   &-header {
     padding: 0;
     font-weight: bold;
   }
   &-body {
     &__item {
-      padding: 0 3px;
+//      padding: 0 3px;
       box-sizing: border-box;
       float: none;
       display: block;
-      margin-right: 10px;
+//      margin-right: 10px;
       width: initial;
     }
   }
