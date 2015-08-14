@@ -5881,38 +5881,57 @@ textarea.b-form-control {
   letter-spacing: normal;
 }
 
+
+.b-catalog__title-h2 {
+  font-family: Arial, sans-serif;
+  letter-spacing: normal;
+}
+
 .product-table_allmods-block {
   border-top: 1px solid #dddddd;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
   overflow: auto;
   &__label {
-    text-align: right;
+    text-align: center;
     display: inline-block;
-    float: right;
+    float: none;
+    background-color: #d9ddac;
+    padding: 2px 10px;
+    padding-right: 0;
+    margin: 0 auto;
+    text-decoration: underline;
     cursor: pointer;
-
+    &:hover {
+      opacity: 0.8;
+    }
     .allmods-block__open-arrow {
       display: inline-block;
-      width: 2.4rem;
-      height: 1.4rem;
-      background: url('css/images/button.svg') no-repeat;
+      width: 2rem;
+      height: 1.8rem;
+      background: url('/images/sprite-other-30x.png') no-repeat;
+      background-position-x: -67px;
+      background-position-y: 0px;
+      background-size: auto 100%;
       vertical-align: middle;
 
     }
 
     .allmods-block__close-arrow {
       display: inline-block;
-      width: 2.4rem;
-      height: 1.4rem;
-      background: url('css/images/button.svg') no-repeat;
+      width: 2rem;
+      height: 1.8rem;
+      background: url('/images/sprite-other-30x.png') no-repeat;
+      background-position-x: -67px;
+      background-position-y: 0px;
+      background-size: auto 100%;
       vertical-align: middle;
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       -o-transform: rotate(-90deg);
       transform: rotate(-90deg);
-      background-position-x: 4px;
     }
   }
 }
@@ -6260,4 +6279,10 @@ textarea.b-form-control {
       }
     }
   }
+}
+.room-summ-header {
+  float: right;
+  line-height: 30px;
+  vertical-align: middle;
+  font-size: 1.7rem;
 }
