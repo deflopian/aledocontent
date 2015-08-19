@@ -39,7 +39,7 @@
     padding-right: 8px;
 }
 
-.item .but-item {
+.item .but-item, .item .comm-item {
     padding: 0 ;
     position: relative;
     padding-left: 15px;
@@ -231,7 +231,6 @@ p{margin-bottom: 0}
 .table-products td{
     vertical-align: middle !important;
     text-align: center;
-    position: relative;
 }
 
 
