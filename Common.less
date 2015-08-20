@@ -1492,6 +1492,12 @@ html:not(.b-html_mobile) {
   &_gray-bordered {
     border-color: @gray_color;
   }
+  
+  &_white-bordered {
+    background: transparent;
+	color: white;
+	border: 0.1rem solid white;
+  }
 
   &_yellow-bordered {
     border-color: @yellow_color;
@@ -3797,6 +3803,8 @@ textarea.b-form-control {
       position: relative;
       overflow: hidden;
       padding: 0.6rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
       border: 1px dotted white;
     }
 
@@ -3825,6 +3833,7 @@ textarea.b-form-control {
 
 #work_email,
 #work_vacancy,
+#work_letter,
 #work_name {
   background-color: rgba(red(#fff), green(#fff), blue(#fff), 0.6);
   border-color: transparent;
