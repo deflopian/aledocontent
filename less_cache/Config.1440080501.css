@@ -4286,18 +4286,18 @@ textarea.b-form-control {
   padding-right: 1rem;
   width: auto;
 }
-#work_email,
+#work_mail,
 #work_vacancy,
 #work_letter,
 #work_name {
   background-color: rgba(255, 255, 255, 0.6);
   border-color: transparent;
 }
-#work_email:hover,
+#work_mail:hover,
 #work_vacancy:hover,
 #work_letter:hover,
 #work_name:hover,
-#work_email:focus,
+#work_mail:focus,
 #work_vacancy:focus,
 #work_letter:focus,
 #work_name:focus {
@@ -4310,7 +4310,7 @@ textarea.b-form-control {
   padding-left: 1.5rem;
 }
 #work_submit:hover {
-  background-color: #dddd14;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 991px) {
   .b-section_work .b-section__content {
@@ -4352,6 +4352,14 @@ textarea.b-form-control {
 .b-html_mobile .b-section_service {
   background-size: auto, auto 100%;
   background-attachment: scroll, scroll;
+}
+.ui-tooltip {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-width: 0 !important;
 }
 .b-advantages {
   position: relative;
