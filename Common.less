@@ -1492,7 +1492,7 @@ html:not(.b-html_mobile) {
   &_gray-bordered {
     border-color: @gray_color;
   }
-  
+
   &_white-bordered {
     background: transparent;
 	color: white;
@@ -2546,7 +2546,9 @@ html:not(.b-html_mobile) {
             padding: 0.5rem 0;
             text-align: center;
             font-size: 1.6rem;
+
           }
+
         }
       }
     }
@@ -2737,6 +2739,9 @@ html:not(.b-html_mobile) {
 
 .b-mt1 {
   margin-top: 1rem;
+}
+.b-mt2 {
+  margin-top: 2rem;
 }
 
 .b-mb3 {
@@ -3773,7 +3778,9 @@ textarea.b-form-control {
 .b-work {
   background-color: rgba(red(#1F053A), green(#1F053A), blue(#1F053A), 0.7);
   padding: 5rem;
-
+  &_has-vacancies{
+    padding-bottom: 3.5rem;
+  }
   &__image {
     display: block;
     height: 30.3rem;
@@ -3812,7 +3819,11 @@ textarea.b-form-control {
       display: table;
       width: 100%;
     }
-
+ &__file-reset {
+   position: absolute;
+   top: 0;
+   right: 0.3rem;
+ }
     &__row {
       display: table-row;
     }
@@ -3828,7 +3839,36 @@ textarea.b-form-control {
         width: auto;
       }
     }
+    &_vacancy{
+      &__file{
+        padding:0;
+        margin-bottom: 3rem;
+        margin-top:3rem;
+      }
+      &__file-zone{
+        position: relative;
+        line-height: 1;
+        padding:1rem;
+        text-align: center;
+        overflow: hidden;
+        background-color: rgba(red(@yellow_color), green(@yellow_color), blue(@yellow_color), 0.2);
+      }
+      width:auto;
+      .b-work-form__cell {
+        &_left {
+          padding-right:2rem;
+        }
+      }
+    }
   }
+}
+.b-work-form_vacancy__file-zone_file-uploaded{
+  background:transparent;
+  border:1px solid @gray_color;
+}
+#vacancy_submit {
+  margin-top: 1.5rem;
+  border-width: 1px;
 }
 
 #work_mail,
@@ -5766,7 +5806,6 @@ textarea.b-form-control {
   max-width: 750px;
   margin: 0 auto;
   padding: 1rem 0 3rem;
-  
   img {
     margin: 4.5rem auto;
     display: block;
@@ -6300,4 +6339,39 @@ textarea.b-form-control {
   line-height: 30px;
   vertical-align: middle;
   font-size: 1.7rem;
+}
+
+
+.b-opened-vacancies{
+  margin-top:1.3rem;
+  padding-top:2rem;
+  border-top:1px dotted #ffffff;
+  &__heading{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    margin-top:0;
+  }
+  &-list {
+    &__item {
+      display: inline-block;
+      line-height: 3.6rem;
+      color: white;
+      vertical-align: middle;
+      font-size: 1.6rem;
+      margin-top:0.2rem;
+    }
+
+    &__separator {
+      margin-top:0.2rem;
+      height: 3.6rem;
+      vertical-align: middle;
+      border-right: 1px dotted white;
+      display: inline-block;
+      margin-left: 3.5rem;
+      margin-right: 3.5rem;
+    }
+  }
+}
+.b-vacancy-dialog{
+   width:56rem;
 }
