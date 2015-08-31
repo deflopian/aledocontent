@@ -3391,6 +3391,9 @@ fieldset[disabled] .b-button .b-button_small {
 .b-mt1 {
   margin-top: 1rem;
 }
+.b-mt2 {
+  margin-top: 2rem;
+}
 .b-mb3 {
   margin-bottom: 3rem;
 }
@@ -4240,6 +4243,9 @@ textarea.b-form-control {
   background-color: rgba(31, 5, 58, 0.7);
   padding: 5rem;
 }
+.b-work_has-vacancies {
+  padding-bottom: 3.5rem;
+}
 .b-work__image {
   display: block;
   height: 30.3rem;
@@ -4273,6 +4279,11 @@ textarea.b-form-control {
   display: table;
   width: 100%;
 }
+.b-work-form__file-reset {
+  position: absolute;
+  top: 0;
+  right: 0.3rem;
+}
 .b-work-form__row {
   display: table-row;
 }
@@ -4285,6 +4296,33 @@ textarea.b-form-control {
 .b-work-form__cell_left {
   padding-right: 1rem;
   width: auto;
+}
+.b-work-form_vacancy {
+  width: auto;
+}
+.b-work-form_vacancy__file {
+  padding: 0;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.b-work-form_vacancy__file-zone {
+  position: relative;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(221, 221, 20, 0.2);
+}
+.b-work-form_vacancy .b-work-form__cell_left {
+  padding-right: 2rem;
+}
+.b-work-form_vacancy__file-zone_file-uploaded {
+  background: transparent;
+  border: 1px solid #6e7172;
+}
+#vacancy_submit {
+  margin-top: 1.5rem;
+  border-width: 1px;
 }
 #work_mail,
 #work_vacancy,
@@ -6327,6 +6365,36 @@ textarea.b-form-control {
   line-height: 30px;
   vertical-align: middle;
   font-size: 1.7rem;
+}
+.b-opened-vacancies {
+  margin-top: 1.3rem;
+  padding-top: 2rem;
+  border-top: 1px dotted #ffffff;
+}
+.b-opened-vacancies__heading {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+.b-opened-vacancies-list__item {
+  display: inline-block;
+  line-height: 3.6rem;
+  color: white;
+  vertical-align: middle;
+  font-size: 1.6rem;
+  margin-top: 0.2rem;
+}
+.b-opened-vacancies-list__separator {
+  margin-top: 0.2rem;
+  height: 3.6rem;
+  vertical-align: middle;
+  border-right: 1px dotted white;
+  display: inline-block;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+.b-vacancy-dialog {
+  width: 56rem;
 }
 .container {
   margin-right: auto;
