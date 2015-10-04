@@ -6523,3 +6523,43 @@ textarea.b-form-control {
     margin-bottom: 2.5rem;
   }
 }
+
+.b-geo-widget {
+    border: 3px solid @yellow_color;
+    background-color: white;
+    padding: 3.5rem 8rem;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    .transition(0.5s transform);
+    .translateX(-150%);
+    z-index:10;
+    width:50rem;
+    &_open{
+        .translateX(0);
+    }
+    &__content {
+        text-align: center;
+        font-size: 1.6rem;
+        line-height:1.2;
+        color: #777777;
+    }
+
+    &__close {
+        padding: 0;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        -webkit-appearance: none;
+        width: 2rem;
+        height: 2rem;
+        background: url('/Content/images/icon-close.svg') center center no-repeat;
+        background-size: cover;
+        position: absolute;
+        right: 0.9rem;
+        top: 1.2rem;
+        &:hover{
+            .opacity(0.5);
+        }
+    }
+}
