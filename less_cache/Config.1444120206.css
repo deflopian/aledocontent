@@ -1657,6 +1657,12 @@ html:not(.b-html_mobile) .b-slider-outer:hover .b-slider-arrows__arrow {
 .b-slider_no-slider {
   text-align: center !important;
 }
+.b-slider_no-slider_fade .slick-track {
+  width: 100% !important;
+}
+.b-slider_no-slider .slick-track {
+  text-align: center !important;
+}
 .b-slider_no-slider > * {
   display: inline-block !important;
 }
@@ -5184,7 +5190,7 @@ textarea.b-form-control {
 .slick-slider .slick-track {
   white-space: nowrap;
   font-size: 0;
-  text-align: right;
+  text-align: left;
 }
 .slick-slider .slick-track .slick-slide {
   display: inline-block;
