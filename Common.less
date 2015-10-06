@@ -1018,60 +1018,74 @@ html:not(.b-html_mobile) {
 }
 
 .b-slider {
-  margin: 0;
-  .clearfix();
-  &_no-slider {
-    text-align: center !important;
+    margin: 0;
+    .clearfix();
 
-    & > * {
-      display: inline-block !important;
+    &_no-slider {
+        text-align: center !important;
+
+        &_fade {
+            .slick-track {
+                width: 100% !important;
+            }
+        }
+
+        .slick-track {
+            text-align: center !important;
+        }
+
+        & > * {
+            display: inline-block !important;
+        }
     }
-  }
-  &_banners {
-    max-height: 40rem;
-    overflow: hidden;
-    &__slider {
-      vertical-align: middle;
-    }
-  }
-  &_show-room {
-    .b-slider__item {
-      height: 66.8rem;
-      width: 100rem;
+
+    &_banners {
+        max-height: 40rem;
+        overflow: hidden;
+
+        &__slider {
+            vertical-align: middle;
+        }
     }
 
-    .b-slider__image {
-      height: 100%;
-      min-width: 100%;
-      display: block;
+    &_show-room {
+        .b-slider__item {
+            height: 66.8rem;
+            width: 100rem;
+        }
+
+        .b-slider__image {
+            height: 100%;
+            min-width: 100%;
+            display: block;
+        }
     }
-  }
 
-  &__item {
-    height: 40rem;
-    padding-right: 0.2rem;
-    padding-left: 0.2rem;
-  }
-
-  &__item:last-child {
-    padding-right: 0;
-  }
-
-  &__image {
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-  }
-
-  &_project {
     &__item {
-      height: 50rem;
+        height: 40rem;
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
     }
-  }
 
-  .slick-track {
-    //width: 200000px !important;
-  }
+        &__item:last-child {
+            padding-right: 0;
+        }
+
+    &__image {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+
+    &_project {
+        &__item {
+            height: 50rem;
+        }
+    }
+
+    .slick-track {
+        //width: 200000px !important;
+    }
 }
 
 .b-project-products__product-name {
@@ -4961,7 +4975,7 @@ textarea.b-form-control {
   .slick-track {
     white-space: nowrap;
     font-size: 0;
-    text-align: right;
+    text-align: left;
 
     .slick-slide {
       display: inline-block;
