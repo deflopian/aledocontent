@@ -5433,6 +5433,31 @@ textarea.b-form-control {
   }
 }
 
+.series-description {
+    table {
+        tbody, tr, td {
+          border: 1px solid @gray_color;
+        }
+        tr {
+          td {
+            padding: 15px;
+            vertical-align: top;
+          }
+        }
+
+        tr:first-child {
+          td {
+            font-weight: bold;
+            vertical-align: middle;
+            p {
+              margin: 0;
+            }
+          }
+          background-color: @gray_l_color;
+        }
+    }
+}
+
 #main-cart:after {
   background-color: @yellow_color;
 }
