@@ -5550,28 +5550,23 @@ textarea.b-form-control {
   /* font-weight: bold; */
   margin-bottom: 0;
 }
-.series-description.table {
-  border: 0;
-  border-color: #6e7172;
+.series-description table tbody,
+.series-description table tr,
+.series-description table td {
+  border: 1px solid #6e7172;
 }
-.series-description.table tbody,
-.series-description.table tr,
-.series-description.table td {
-  border-color: #6e7172;
-}
-.series-description.table tr td {
+.series-description table tr td {
   padding: 15px;
   vertical-align: top;
 }
-.series-description.table tr:first-child {
+.series-description table tr:first-child {
   background-color: #eff0f0;
 }
-.series-description.table tr:first-child td {
-  text-align: center;
+.series-description table tr:first-child td {
   font-weight: bold;
   vertical-align: middle;
 }
-.series-description.table tr:first-child td p {
+.series-description table tr:first-child td p {
   margin: 0;
 }
 #main-cart:after {
