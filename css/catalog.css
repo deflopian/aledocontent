@@ -419,8 +419,19 @@ tr.highlighted > td, tr.highlighted:hover > td{ background-color: rgba(195, 207,
     text-decoration: underline;
 }
 .catalog-section-bar:hover{background-color: #E8ECAC;}
-.catalog-section-bar h2{ margin-top: 7px; margin-bottom: 7px; }
-.catalog-section-bar:hover h2{ color: #666; text-decoration: underline }
+.catalog-section-bar h2{ margin-top: 7px; margin-bottom: 7px; font-size: 16px; font-family: Arial, sans-serif; }
+.catalog-section-bar:hover h2{ color: #666; text-decoration: underline; }
+
+.catalog-section-bar-disabled{
+    line-height: 30px;
+    display: block;
+    padding: 1px 15px;
+    background-color: #ededed;
+    text-decoration: underline;
+	color: #c2c2c2;
+}
+.catalog-section-bar-disabled h2{ margin-top: 7px; margin-bottom: 7px; font-size: 16px; font-family: Arial, sans-serif; }
+.catalog-section-bar-disabled:hover h2{ color: #c2c2c2; text-decoration: underline; }
 
 
 /*.catalog-bar.catalog-sec-1{ background-color: rgba(0, 149, 204, 0.20); } *//* led лампы*/
