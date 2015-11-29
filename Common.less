@@ -7750,3 +7750,95 @@ background-color: @yellow_color;
 	margin-right: 2px;
 	font-size: 11px;
 }
+
+
+.b-modal-tooltip {
+    display:none;
+    padding: 5rem;
+    position: absolute;
+    background-color: white;
+    border: 5px solid #d1d43a;
+    z-index: 100;
+    max-width: 100%;
+
+    &__close {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+    }
+
+    &__arrow {
+        background: url('/Content/images/modal-tooltip-arrow.png') 0 0 no-repeat;
+        width:30px;
+        height:17px;
+        position:absolute;
+        bottom:-17px;
+    }
+}
+.b-modular-tooltip {
+    width: 95rem;
+    &__arrow {
+        margin-left:-10px;
+    }
+}
+.b-modular-table{
+    display:table;
+    border-collapse:collapse;
+    width:100%;
+    &__heading{
+        margin-top:0;
+    }
+    &__image {
+        max-height:100%;
+        vertical-align:middle;
+        display:inline-block;
+        
+        &-wrapper{
+            text-align:center;
+            width:22rem;
+            height:17rem;
+            font-size:0;
+            white-space:nowrap;
+            &:before{
+                display:inline-block;
+                vertical-align:middle;
+                height:100%;
+                content:" ";
+            }
+        }
+    }
+    &__cell{
+        display:table-cell;
+        width:100%;
+        vertical-align:middle;
+        &_l {
+            padding-right:6rem;
+            width:auto;
+
+        }
+
+    }
+}
+.b-modular-color {
+     text-decoration:none;
+    &__image {
+            display:inline-block;
+            width:2.2rem;
+            height:2.2rem;
+            vertical-align:middle;
+    }
+    &__text {
+        border-bottom:1px dotted currentColor;
+           vertical-align:middle;
+    }
+}
+.b-modular-colors{
+    margin-bottom:1.6rem;
+    &__list-item{
+        display:inline-block;
+        margin-right:4rem;
+    }
+    &__item {
+      
+    }
+}
