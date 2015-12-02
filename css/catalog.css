@@ -45,6 +45,10 @@
     padding-left: 15px;
 }
 
+.but-item {
+    width: 80px;
+}
+
 .item-header .but-item-header {
     width: 60px;
 }
@@ -235,7 +239,7 @@ p{margin-bottom: 0}
 
 
 .buy-arrow{
-    width: 0;
+    width: 10px;
     height: 0;
     margin-left: -10px;
     margin-top: 0;
@@ -255,7 +259,7 @@ p{margin-bottom: 0}
     font-size: 10px;
     text-transform: uppercase;
 }
-.buy-btn{ cursor: pointer; }
+.buy-btn{ cursor: pointer; width: 65px;}
 .buy-btn:hover { opacity: 0.8; color: #666 !important; }
 .buy-off{margin-left: 36px}
 
